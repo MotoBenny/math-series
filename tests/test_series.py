@@ -38,9 +38,9 @@ def test_sum_series_for_lucas():
 
 
 def test_sum_series_series():
-    assert sum_series(5, 0, 2) is 10
+    assert sum_series(4, 3, 7) is 27
 
-
+# 3, 7, 10, 17, 27, 44
 """
 def test_one():
     actual = fizz_buzz(1)
