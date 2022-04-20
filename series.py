@@ -25,6 +25,11 @@ def lucas(num):
 
 
 def sum_series(num, start_num=0, second_num=1):
+    """
+    Sum series, returns the given value at index (num) of a series of numbers,
+    where the start_num is the first num in the series, and second_num is the second, with each
+    set of the two previous numbers being added together.
+    """
     if num == 0:
         return start_num
     elif num == 1:
@@ -32,9 +37,3 @@ def sum_series(num, start_num=0, second_num=1):
     else:
         return sum_series(num-1, start_num, second_num) + sum_series(num-2, start_num, second_num)
 
-
-# sum_series(5, 0, 6)
-# 6
-# 0, 2, 2, 4, 6, 10, 16, 26
-#
-# 2, 2, 4, 6, 10, 16, 26 . . .
